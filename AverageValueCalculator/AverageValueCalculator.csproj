@@ -5,4 +5,8 @@
         <TargetFramework>net471</TargetFramework>
     </PropertyGroup>
 
+    <ItemGroup>
+      <Folder Include="doc" />
+    </ItemGroup>
+
 </Project>
