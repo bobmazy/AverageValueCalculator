@@ -4,7 +4,7 @@ using System.Globalization;
 
 namespace AverageValueCalculator
 {
-    public class Inputhelper
+    public static class Inputhelper
     {
         public static List<double> GetNumbers()
         {
