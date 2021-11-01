@@ -30,7 +30,6 @@ namespace Test
             double median = Median.Calculate(numbers);
 
             // Assert
-
             Assert.AreEqual(1, median);
         }
 
@@ -45,7 +44,6 @@ namespace Test
             double median = Median.Calculate(numbers);
 
             // Assert
-
             Assert.AreEqual(1.5, median);
         }
 
@@ -61,7 +59,6 @@ namespace Test
 
 
             // Assert
-
             Assert.AreEqual(5, median);
         }
 
@@ -78,7 +75,6 @@ namespace Test
 
 
             // Assert
-
             Assert.AreEqual(6, median);
         }
 
@@ -94,7 +90,6 @@ namespace Test
 
 
             // Assert
-
             Assert.AreEqual(5, median);
         }
 
@@ -110,7 +105,6 @@ namespace Test
 
 
             // Assert
-
             Assert.AreEqual(0.5, median);
         }
     }
