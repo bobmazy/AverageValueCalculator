@@ -12,7 +12,6 @@ namespace AverageValueCalculator
             double[] sortedNumbers = numbers;
             Array.Sort(sortedNumbers);
 
-
             int mid = numbers.Length / 2;
             var isOdd = numbers.Length % 2 == 0;
             if (isOdd)

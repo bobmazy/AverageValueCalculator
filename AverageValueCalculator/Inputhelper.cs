@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Globalization;
 
 namespace AverageValueCalculator
 {
@@ -51,7 +52,7 @@ namespace AverageValueCalculator
                     }
                     else
                     {
-                        validInput = Double.TryParse(stringInput, out input);
+                        validInput = Double.TryParse(stringInput, NumberStyles.Any, CultureInfo.InvariantCulture, out input);
                         if (!validInput)
                         {
                             EmptyLine();
