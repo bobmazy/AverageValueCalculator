@@ -13,8 +13,8 @@ namespace AverageValueCalculator
             Array.Sort(sortedNumbers);
 
             int mid = numbers.Length / 2;
-            var isOdd = numbers.Length % 2 == 0;
-            if (isOdd)
+            var isEven = numbers.Length % 2 == 0;
+            if (isEven)
             {
                 int firstIndex = mid - 1;
                 double firstNumber = numbers.ElementAt(firstIndex);
