@@ -1,14 +1,12 @@
 ﻿using System;
 using System.Linq;
 
-namespace AverageValueCalculator.AverageValuVariants
+namespace AverageValueCalculator
 {
     public static class Median
     {
         public static double Calculate(double[] numbers)
         {
-            if (numbers.Length == 0) return 0;
-
             double[] sortedNumbers = numbers;
             Array.Sort(sortedNumbers);
 

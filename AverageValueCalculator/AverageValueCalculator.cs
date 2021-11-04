@@ -1,5 +1,4 @@
 ﻿using System;
-using AverageValueCalculator.AverageValuVariants;
 using AverageValueCalculator.Input;
 
 namespace AverageValueCalculator
@@ -15,9 +14,7 @@ namespace AverageValueCalculator
 
             if (inputResult.ValidInput)
             {
-                double average = Average.Calculate(inputResult.Numbers.ToArray());
                 double median = Median.Calculate(inputResult.Numbers.ToArray());
-                Console.WriteLine("Der Durchschnitt von " + string.Join(", ", inputResult.Numbers) + " beträgt: " + average);
                 Console.WriteLine("Der Median von " + string.Join(", ", inputResult.Numbers) + " beträgt: " + median);
             }
             else
