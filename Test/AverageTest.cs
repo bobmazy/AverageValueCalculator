@@ -1,5 +1,5 @@
 ﻿using System;
-using AverageValueCalculator;
+using AverageValueCalculator.AverageValuVariants;
 using NUnit.Framework;
 
 namespace Test
@@ -8,20 +8,6 @@ namespace Test
     {
         [Test]
         [TestCase(TestName = "/TAF1/")]
-        public void Calculate_with_an_no_numbers()
-        {
-            // Arrange
-            double[] numbers = { };
-
-            // Act
-            double median = Average.Calculate(numbers);
-
-            // Assert
-            Assert.AreEqual(0, median);
-        }
-
-        [Test]
-        [TestCase(TestName = "/TAF2/")]
         public void Calculate_with_one_number()
         {
             // Arrange
@@ -31,12 +17,11 @@ namespace Test
             double median = Average.Calculate(numbers);
 
             // Assert
-
             Assert.AreEqual(1.5, median);
         }
 
         [Test]
-        [TestCase(TestName = "/TAF3/")]
+        [TestCase(TestName = "/TAF2/")]
         public void Calculate_with_equal_numbers()
         {
             // Arrange
@@ -46,12 +31,11 @@ namespace Test
             double median = Average.Calculate(numbers);
 
             // Assert
-
             Assert.AreEqual(1.5, median);
         }
 
         [Test]
-        [TestCase(TestName = "/TAF4/")]
+        [TestCase(TestName = "/TAF3/")]
         public void Calculate_with_different_numbers()
         {
             // Arrange
@@ -66,7 +50,7 @@ namespace Test
         }
 
         [Test]
-        [TestCase(TestName = "/TAF5/")]
+        [TestCase(TestName = "/TAF4/")]
         public void Calculate_with_negative_numbers()
         {
             // Arrange
@@ -77,12 +61,11 @@ namespace Test
 
 
             // Assert
-
             Assert.AreEqual(0.25, median);
         }
 
         [Test]
-        [TestCase(TestName = "/TAF6/")]
+        [TestCase(TestName = "/TAF5/")]
         public void Calculate_with_unsorted_numbers()
         {
             // Arrange
@@ -94,7 +77,6 @@ namespace Test
 
 
             // Assert
-
             Assert.AreEqual(0.5, median);
         }
 

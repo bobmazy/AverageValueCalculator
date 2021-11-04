@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Linq;
 
-namespace AverageValueCalculator
+namespace AverageValueCalculator.AverageValuVariants
 {
     public static class Median
     {

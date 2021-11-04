@@ -1,4 +1,4 @@
-﻿namespace AverageValueCalculator
+﻿namespace AverageValueCalculator.AverageValuVariants
 {
     public static class Average
     {
